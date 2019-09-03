@@ -1,0 +1,165 @@
+// Import Fonts
+@import url('https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i|Nunito+Sans:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i&display=swap');
+
+// Font Variables
+$style-font: 'Nunito Sans', sans-serif;
+$primary-font: 'Lato', sans-serif;
+
+// Color Variables
+// $white: #eaeaea;
+$white: #f1f1f1;
+$black: #232021;
+$orange: #ec9c6f;
+
+* {
+	color: $black;
+	font-family: $primary-font;
+	background-color: $white;
+}
+
+button {
+	// background-color: transparent;
+	background-color: $orange;
+	box-shadow: none !important;
+	border: 1px solid $orange;
+	border-radius: 0.3rem;
+	padding: 0.4rem 0.8rem;
+	margin: 0 0.5rem;
+	font-family: $primary-font;
+	font-weight: 400;
+	text-transform: capitalize;
+	font-size: 0.8rem;
+	cursor: pointer;
+	color: $white;
+}
+
+.buttonForm {
+	display: inline;
+}
+
+.noOutline {
+	border: none;
+	background-color: transparent;
+	color: $black;
+	// font-weight: 300;
+}
+
+button:hover {
+	background-color: darken($orange, 5%);
+	// color: $orange;
+}
+
+.noOutline:hover {
+	background-color: transparent;
+}
+
+.outerContainer {
+	padding: 1rem;
+}
+
+.innerContainer {
+	max-width: 1000px;
+	margin: 0 auto;
+}
+
+.navContainer {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.navLogo:hover {
+	transition: width 0.3s ease-out;
+}
+
+.navLogo:hover .logoSubLetter {
+	// display: inline;
+	visibility: visible;
+	// animation: fade-in 1s;
+	opacity: 1;
+}
+
+.navLogo {
+	cursor: pointer;
+}
+
+.logoLetter {
+	font-family: $style-font;
+	font-size: 2rem;
+	font-weight: 900;
+	color: $orange;
+	display: inline;
+}
+
+.logoSubLetter {
+	// display: none;
+	position: absolute;
+	color: $orange;
+	font-size: 1.8rem;
+	// transition: visibility 0.5s, opacity 0.5s width 20px 0.5s;
+	transition: all 1s;
+	visibility: hidden;
+	opacity: 0;
+	width: 0;
+	left: 60px;
+	// overflow: hidden;
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+		width: 0;
+		overflow: hidden;
+	}
+	to {
+		opacity: 1;
+		width: 100%;
+		overflow: visible;
+	}
+}
+
+@keyframes fadeOut {
+	from {
+		opacity: 1;
+	}
+	to {
+		opacity: 0;
+	}
+}
+
+.headshot {
+	width: 150px;
+	border-radius: 50%;
+	display: block;
+	margin: 0 auto;
+}
+
+h1 {
+	font-family: $style-font;
+	font-weight: 600;
+	font-size: 2rem;
+}
+
+p {
+	font-family: $primary-font;
+	font-weight: 300;
+	font-size: 0.8rem;
+}
+
+.orange {
+	color: $orange;
+}
+
+.footerContainer {
+	text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+	.navContainer {
+		flex-flow: column nowrap;
+	}
+	.links {
+		display: none;
+	}
+}
