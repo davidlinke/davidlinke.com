@@ -3,20 +3,18 @@ import React from 'react';
 const Navigation = () => {
 	return (
 		<div className='outerContainer navContainer'>
-			<div className='navLogo'>
-				<div className='logoLetter'>D</div>
-				<span className='logoSubLetter 1'>a</span>
-				<span className='logoSubLetter 2'>v</span>
-				<span className='logoSubLetter 3'>i</span>
-				<span className='logoSubLetter 4'>d</span>
-				<div className='logoLetter'>
-					<span className='logoSubLetter space'> </span>L
-					{/* <span className='logoSubLetter 5'>i</span>
-					<span className='logoSubLetter 6'>n</span>
-					<span className='logoSubLetter 7'>k</span>
-					<span className='logoSubLetter 8'>e</span> */}
-				</div>
-			</div>
+			<a className='navLogo' href='/'>
+				<div className='logoLetter D'>D</div>
+				<span className='logoSubLetter letter1'>a</span>
+				<span className='logoSubLetter letter2'>v</span>
+				<span className='logoSubLetter letter3'>i</span>
+				<span className='logoSubLetter letter4'>d</span>
+				<div className='logoLetter L'>L</div>
+				<span className='logoSubLetter letter5'>i</span>
+				<span className='logoSubLetter letter6'>n</span>
+				<span className='logoSubLetter letter7'>k</span>
+				<span className='logoSubLetter letter8'>e</span>
+			</a>
 			<div className='links'>
 				<button className='noOutline'>Contact</button>
 				<form

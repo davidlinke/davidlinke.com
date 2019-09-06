@@ -6,22 +6,33 @@ $style-font: 'Nunito Sans', sans-serif;
 $primary-font: 'Lato', sans-serif;
 
 // Color Variables
-// $white: #eaeaea;
 $white: #f1f1f1;
+// $white: #fdf1e3;
 $black: #232021;
-$orange: #ec9c6f;
+$primary-color: #ec9c6f;
+// $primary-color: #527941;
+
+// Animation Variables
+$speed: 0.5s;
+$letterDelayInterval: 0.04s;
 
 * {
 	color: $black;
 	font-family: $primary-font;
+}
+
+body {
 	background-color: $white;
 }
 
+a {
+	text-decoration: none;
+}
+
 button {
-	// background-color: transparent;
-	background-color: $orange;
+	background-color: $primary-color;
 	box-shadow: none !important;
-	border: 1px solid $orange;
+	border: 1px solid $primary-color;
 	border-radius: 0.3rem;
 	padding: 0.4rem 0.8rem;
 	margin: 0 0.5rem;
@@ -41,12 +52,10 @@ button {
 	border: none;
 	background-color: transparent;
 	color: $black;
-	// font-weight: 300;
 }
 
 button:hover {
-	background-color: darken($orange, 5%);
-	// color: $orange;
+	background-color: darken($primary-color, 5%);
 }
 
 .noOutline:hover {
@@ -58,7 +67,7 @@ button:hover {
 }
 
 .innerContainer {
-	max-width: 1000px;
+	max-width: 800px;
 	margin: 0 auto;
 }
 
@@ -69,63 +78,123 @@ button:hover {
 	align-items: center;
 }
 
-.navLogo:hover {
-	transition: width 0.3s ease-out;
-}
-
-.navLogo:hover .logoSubLetter {
-	// display: inline;
-	visibility: visible;
-	// animation: fade-in 1s;
-	opacity: 1;
-}
-
 .navLogo {
+	display: block;
+	position: relative;
 	cursor: pointer;
+	width: 3rem;
+	transition: width $speed;
+}
+
+.navLogo:hover {
+	width: 10rem;
+	transition: width $speed;
 }
 
 .logoLetter {
 	font-family: $style-font;
 	font-size: 2rem;
 	font-weight: 900;
-	color: $orange;
+	color: $primary-color;
 	display: inline;
 }
 
-.logoSubLetter {
-	// display: none;
+.L {
 	position: absolute;
-	color: $orange;
+	left: 1.45rem;
+	// ANIMATE OFF
+	transition: all $speed;
+	transition-delay: $letterDelayInterval * 6;
+}
+
+.logoSubLetter {
+	position: absolute;
+	color: $primary-color;
 	font-size: 1.8rem;
-	// transition: visibility 0.5s, opacity 0.5s width 20px 0.5s;
-	transition: all 1s;
-	visibility: hidden;
 	opacity: 0;
-	width: 0;
-	left: 60px;
-	// overflow: hidden;
+	// ANIMATE OFF
+	transition: all $speed;
 }
 
-@keyframes fadeIn {
-	from {
-		opacity: 0;
-		width: 0;
-		overflow: hidden;
-	}
-	to {
-		opacity: 1;
-		width: 100%;
-		overflow: visible;
-	}
+.letter1 {
+	left: 1.5rem;
+	transition-delay: $letterDelayInterval * 7;
 }
 
-@keyframes fadeOut {
-	from {
-		opacity: 1;
-	}
-	to {
-		opacity: 0;
-	}
+.letter2 {
+	left: 2.35rem;
+	transition-delay: $letterDelayInterval * 6;
+}
+
+.letter3 {
+	left: 3.25rem;
+	transition-delay: $letterDelayInterval * 5;
+}
+
+.letter4 {
+	left: 3.7rem;
+	transition-delay: $letterDelayInterval * 4;
+}
+
+.letter5 {
+	left: 6.2rem;
+	transition-delay: $letterDelayInterval * 3;
+}
+
+.letter6 {
+	left: 6.65rem;
+	transition-delay: $letterDelayInterval * 2;
+}
+
+.letter7 {
+	left: 7.55rem;
+	transition-delay: $letterDelayInterval;
+}
+
+.letter8 {
+	left: 8.45rem;
+	transition-delay: 0s;
+}
+
+.navLogo:hover .logoSubLetter {
+	opacity: 1;
+}
+
+.navLogo:hover .letter1 {
+	transition-delay: 0s;
+}
+
+.navLogo:hover .letter2 {
+	transition-delay: $letterDelayInterval;
+}
+
+.navLogo:hover .letter3 {
+	transition-delay: $letterDelayInterval * 2;
+}
+
+.navLogo:hover .letter4 {
+	transition-delay: $letterDelayInterval * 3;
+}
+
+.navLogo:hover .letter5 {
+	transition-delay: $letterDelayInterval * 4;
+}
+
+.navLogo:hover .letter6 {
+	transition-delay: $letterDelayInterval * 5;
+}
+
+.navLogo:hover .letter7 {
+	transition-delay: $letterDelayInterval * 6;
+}
+
+.navLogo:hover .letter8 {
+	transition-delay: $letterDelayInterval * 7;
+}
+
+.navLogo:hover .L {
+	left: 5rem;
+	transition: all $speed;
 }
 
 .headshot {
@@ -141,15 +210,47 @@ h1 {
 	font-size: 2rem;
 }
 
-p {
+h2 {
+	font-family: $style-font;
+	font-weight: 300;
+	font-size: 1.3rem;
+}
+
+h3 {
+	font-family: $style-font;
+	font-weight: 400;
+	font-size: 1rem;
+}
+
+p,
+li {
 	font-family: $primary-font;
 	font-weight: 300;
-	font-size: 0.8rem;
+	font-size: 0.9rem;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
 }
 
 .orange {
-	color: $orange;
+	color: $primary-color;
 }
+
+.white {
+	color: $white;
+}
+
+.projectVideo {
+	width: 300px;
+}
+
+// .aboutContainer,
+// .workContainer {
+// 	background-color: $black;
+// }
 
 .footerContainer {
 	text-align: center;
