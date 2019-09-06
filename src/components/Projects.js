@@ -1,5 +1,6 @@
 import React from 'react';
 import projects from '../data/projects.json';
+import Browser from './Browser';
 
 const Projects = () => {
 	return (
@@ -13,6 +14,7 @@ const Projects = () => {
 							<div key={`project${index}`} className='individualProject'>
 								<h4>{project.name}</h4>
 								<p>{project.description}</p>
+								<Browser />
 								<video
 									className='projectVideo'
 									src={project.video}
