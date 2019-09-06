@@ -3,14 +3,7 @@ import React from 'react';
 const Browser = () => {
 	return (
 		<div className='browser'>
-			<svg
-				x='0px'
-				y='0px'
-				viewBox='0 0 600 50'
-				style={{ enableBackground: 'new 0 0 600 50' }}
-				xmlSpace='preserve'
-				className='browserSVG'
-			>
+			<svg x='0px' y='0px' viewBox='0 0 600 50' className='browserSVG'>
 				<rect class='browserBar' width='600' height='50' />
 				<circle class='leftCircle' cx='32' cy='24' r='8.8' />
 				<circle class='middleCircle' cx='61.5' cy='24' r='8.8' />
