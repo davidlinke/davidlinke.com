@@ -3,7 +3,7 @@ import ContactForm from './ContactForm';
 
 const Contact = () => {
 	return (
-		<div className='outerContainer contactContainer'>
+		<div className='outerContainer contactContainer' id='contact'>
 			<div className='innerContainer'>
 				<h2>Contact</h2>
 				{/* Email address encoded with http://www.wbwip.com/wbw/emailencoder.html */}

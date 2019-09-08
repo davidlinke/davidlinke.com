@@ -1,6 +1,14 @@
 import React from 'react';
+import { scroller } from 'react-scroll';
 
 const Navigation = () => {
+	const scrollTo = id => {
+		scroller.scrollTo(id, {
+			duration: 2000,
+			smooth: 'easeOutQuad'
+		});
+	};
+
 	return (
 		<div className='outerContainer navContainer'>
 			<a className='navLogo' href='/'>
@@ -16,7 +24,9 @@ const Navigation = () => {
 				<span className='logoSubLetter letter8'>e</span>
 			</a>
 			<div className='links'>
-				<button className='noOutline'>Contact</button>
+				<button className='noOutline' onClick={() => scrollTo('contact')}>
+					Contact
+				</button>
 				<form
 					className='buttonForm'
 					action='other/davidlinke_resume.pdf'
