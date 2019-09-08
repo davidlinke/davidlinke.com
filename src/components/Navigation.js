@@ -29,7 +29,7 @@ const Navigation = () => {
 				</button>
 				<form
 					className='buttonForm'
-					action='other/davidlinke_resume.pdf'
+					action='davidlinke_resume.pdf'
 					method='get'
 				>
 					<button>Resume</button>
