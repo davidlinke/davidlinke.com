@@ -2,13 +2,19 @@
 	{
 		"name": "Squadformer",
 		"description": "Easily generate groups of people for classrooms or teams. Remembers past groups so groups are not repeated, allows for manual rearranging of groups, allows for toggling people as absent to not include them in groups that day, and more.",
-		"video": "/video/squadformer.mov",
+		"video": "/video/squadformer.mp4",
 		"tech": ["jQuery", "Express"]
 	},
 	{
 		"name": "Grab The Umbrella?",
 		"description": "Quickly know whether you should bring an umbrella with you today, broken down by morning, afternoon, and evening.",
-		"video": "",
+		"video": "/video/umbrella.mp4",
 		"tech": ["jQuery", "AJAX"]
+	},
+	{
+		"name": "The Knowledge",
+		"description": "Create and take fun quizzes.",
+		"video": "/video/theknowledge.mp4",
+		"tech": ["React", "Express"]
 	}
 ]
