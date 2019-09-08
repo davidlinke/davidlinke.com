@@ -16,8 +16,9 @@ $primary-color: #ec9c6f;
 $speed: 0.5s;
 $letterDelayInterval: 0.04s;
 
-// Other Variables
+// Project Video Variables
 $videoBorderRadius: 0.3em;
+$videoBoxShadow: 1px 1px 25px 0px rgba(50, 50, 50, 0.5);
 
 * {
 	color: $black;
@@ -253,6 +254,7 @@ ul {
 
 .browserSVG {
 	border-radius: $videoBorderRadius $videoBorderRadius 0 0;
+	box-shadow: $videoBoxShadow;
 }
 
 .browserBar {
@@ -286,12 +288,30 @@ ul {
 .projectVideo {
 	width: 300px;
 	border-radius: 0 0 $videoBorderRadius $videoBorderRadius;
+	box-shadow: $videoBoxShadow;
+}
+
+.videoContainer {
+	width: 300px;
 }
 
 // .aboutContainer,
 // .workContainer {
 // 	background-color: $black;
 // }
+
+// input {
+// 	display: block;
+// 	border: 1px solid red;
+// }
+
+.contactInput {
+	box-sizing: border-box;
+	border: none;
+	width: 50%;
+	margin: 0.5rem 0;
+	display: block;
+}
 
 .footerContainer {
 	text-align: center;

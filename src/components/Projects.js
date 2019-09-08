@@ -14,15 +14,17 @@ const Projects = () => {
 							<div key={`project${index}`} className='individualProject'>
 								<h4>{project.name}</h4>
 								<p>{project.description}</p>
-								<Browser />
-								<video
-									className='projectVideo'
-									src={project.video}
-									playsInline='playsInline'
-									muted='muted'
-									autoPlay='autoPlay'
-									loop='loop'
-								></video>
+								<div className='videoContainer'>
+									<Browser />
+									<video
+										className='projectVideo'
+										src={project.video}
+										playsInline='playsInline'
+										muted='muted'
+										autoPlay='autoPlay'
+										loop='loop'
+									></video>
+								</div>
 								<h3>Tech Used</h3>
 								<ul>
 									{project.tech.map((technology, i) => {
