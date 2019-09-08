@@ -1,0 +1,51 @@
+// Project Video Variables
+$videoBorderRadius: 0.3em;
+$videoBoxShadow: 1px 1px 25px 0px rgba(50, 50, 50, 0.5);
+
+.browser {
+	width: 300px;
+	height: 25px;
+}
+
+.browserSVG {
+	border-radius: $videoBorderRadius $videoBorderRadius 0 0;
+	box-shadow: $videoBoxShadow;
+}
+
+.browserBar {
+	fill: $black;
+}
+
+.leftCircle {
+	fill: #f0582f;
+}
+
+.middleCircle {
+	fill: #fbd303;
+}
+
+.rightCircle {
+	fill: #71d456;
+}
+
+.leftCircle,
+.middleCircle,
+.rightCircle {
+	// fill: $primary-color;
+}
+
+.addressBar {
+	// fill: #333842;
+	// fill: $primary-color;
+	fill: $white;
+}
+
+.projectVideo {
+	width: 300px;
+	border-radius: 0 0 $videoBorderRadius $videoBorderRadius;
+	box-shadow: $videoBoxShadow;
+}
+
+.videoContainer {
+	width: 300px;
+}

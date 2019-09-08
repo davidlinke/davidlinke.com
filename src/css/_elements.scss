@@ -1,0 +1,96 @@
+// Import Fonts
+@import url('https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i|Nunito+Sans:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i&display=swap');
+
+* {
+	color: $black;
+	font-family: $primary-font;
+}
+
+body {
+	background-color: $white;
+}
+
+a {
+	text-decoration: none;
+}
+
+button {
+	background-color: $primary-color;
+	box-shadow: none !important;
+	border: 1px solid $primary-color;
+	border-radius: 0.3rem;
+	padding: 0.4rem 0.8rem;
+	margin: 0 0.5rem;
+	font-family: $primary-font;
+	font-weight: 400;
+	text-transform: capitalize;
+	font-size: 0.8rem;
+	cursor: pointer;
+	color: $white;
+}
+
+.buttonForm {
+	display: inline;
+}
+
+.noOutline {
+	border: none;
+	background-color: transparent;
+	color: $black;
+}
+
+button:hover {
+	background-color: darken($primary-color, 5%);
+}
+
+.noOutline:hover {
+	background-color: transparent;
+}
+
+.outerContainer {
+	padding: 1rem;
+}
+
+.innerContainer {
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+h1 {
+	font-family: $style-font;
+	font-weight: 600;
+	font-size: 2rem;
+}
+
+h2 {
+	font-family: $style-font;
+	font-weight: 300;
+	font-size: 1.3rem;
+}
+
+h3 {
+	font-family: $style-font;
+	font-weight: 400;
+	font-size: 1rem;
+}
+
+p,
+li {
+	font-family: $primary-font;
+	font-weight: 300;
+	font-size: 0.9rem;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.orange {
+	color: $primary-color;
+}
+
+.white {
+	color: $white;
+}

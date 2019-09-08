@@ -1,0 +1,138 @@
+// Animation Variables
+$speed: 0.5s;
+$letterDelayInterval: 0.04s;
+
+.navContainer {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.navLogo {
+	display: block;
+	position: relative;
+	cursor: pointer;
+	width: 3rem;
+	transition: width $speed;
+}
+
+.navLogo:hover {
+	width: 10rem;
+	transition: width $speed;
+}
+
+.logoLetter {
+	font-family: $style-font;
+	font-size: 2rem;
+	font-weight: 900;
+	color: $primary-color;
+	display: inline;
+}
+
+.L {
+	position: absolute;
+	left: 1.45rem;
+	// ANIMATE OFF
+	transition: all $speed;
+	transition-delay: $letterDelayInterval * 6;
+}
+
+.logoSubLetter {
+	position: absolute;
+	color: $primary-color;
+	font-size: 1.8rem;
+	opacity: 0;
+	// ANIMATE OFF
+	transition: all $speed;
+}
+
+.letter1 {
+	left: 1.5rem;
+	transition-delay: $letterDelayInterval * 7;
+}
+
+.letter2 {
+	left: 2.35rem;
+	transition-delay: $letterDelayInterval * 6;
+}
+
+.letter3 {
+	left: 3.25rem;
+	transition-delay: $letterDelayInterval * 5;
+}
+
+.letter4 {
+	left: 3.7rem;
+	transition-delay: $letterDelayInterval * 4;
+}
+
+.letter5 {
+	left: 6.2rem;
+	transition-delay: $letterDelayInterval * 3;
+}
+
+.letter6 {
+	left: 6.65rem;
+	transition-delay: $letterDelayInterval * 2;
+}
+
+.letter7 {
+	left: 7.55rem;
+	transition-delay: $letterDelayInterval;
+}
+
+.letter8 {
+	left: 8.45rem;
+	transition-delay: 0s;
+}
+
+.navLogo:hover .logoSubLetter {
+	opacity: 1;
+}
+
+.navLogo:hover .letter1 {
+	transition-delay: 0s;
+}
+
+.navLogo:hover .letter2 {
+	transition-delay: $letterDelayInterval;
+}
+
+.navLogo:hover .letter3 {
+	transition-delay: $letterDelayInterval * 2;
+}
+
+.navLogo:hover .letter4 {
+	transition-delay: $letterDelayInterval * 3;
+}
+
+.navLogo:hover .letter5 {
+	transition-delay: $letterDelayInterval * 4;
+}
+
+.navLogo:hover .letter6 {
+	transition-delay: $letterDelayInterval * 5;
+}
+
+.navLogo:hover .letter7 {
+	transition-delay: $letterDelayInterval * 6;
+}
+
+.navLogo:hover .letter8 {
+	transition-delay: $letterDelayInterval * 7;
+}
+
+.navLogo:hover .L {
+	left: 5rem;
+	transition: all $speed;
+}
+
+@media only screen and (max-width: 600px) {
+	.navContainer {
+		flex-flow: column nowrap;
+	}
+	.links {
+		display: none;
+	}
+}
