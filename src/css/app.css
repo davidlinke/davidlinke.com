@@ -124,6 +124,19 @@ li:last-child {
 .white {
   color: #f1f1f1; }
 
+@media (prefers-color-scheme: dark) {
+  * {
+    color: #f1f1f1; }
+
+  body {
+    background-color: #232021; }
+
+  p,
+  li,
+  .contactInput {
+    color: #f1f1f1;
+    font-weight: 300;
+    font-size: 0.9rem; } }
 .navContainer {
   display: flex;
   flex-flow: row nowrap;
@@ -242,6 +255,9 @@ li:last-child {
   margin-bottom: 0;
   text-align: left; }
 
+@media (prefers-color-scheme: dark) {
+  .introSubtext {
+    color: #f1f1f1; } }
 @media only screen and (max-width: 640px) {
   ul {
     justify-content: flex-start; } }
@@ -268,6 +284,9 @@ li:last-child {
 .addressBar {
   fill: #f1f1f1; }
 
+@media (prefers-color-scheme: dark) {
+  .browserBar {
+    fill: #4e4b4c; } }
 .projectVideo {
   width: 300px;
   border-radius: 0 0 0.3em 0.3em;
@@ -317,6 +336,46 @@ li:last-child {
 
 .techUsed {
   justify-content: flex-start; }
+
+.allWork {
+  border-left: solid #ec9c6f 1px;
+  padding: 0.5rem 0 0.5rem 1rem;
+  margin: 0 auto;
+  width: 300px; }
+
+.workContainer {
+  margin: 0 auto; }
+
+.individualWork {
+  position: relative;
+  margin-bottom: 3rem; }
+
+.individualWork:last-child {
+  margin-bottom: 0; }
+
+.timelineDot {
+  color: #ec9c6f;
+  position: absolute;
+  font-size: 1.3rem;
+  top: -0.4rem;
+  left: -1.33rem; }
+
+.topTimelineDot {
+  font-size: 2rem;
+  top: -0.75rem;
+  left: -1.53rem; }
+
+.workTitle {
+  font-weight: 600;
+  margin-bottom: 0.2rem; }
+
+.workCompany {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-style: italic; }
+
+.workDescription {
+  margin-top: 0; }
 
 .contactInput {
   box-sizing: border-box;
@@ -374,6 +433,9 @@ textarea {
   vertical-align: bottom;
   opacity: 0.75; }
 
+@media (prefers-color-scheme: dark) {
+  .linkedInLogoWhitespace {
+    fill: #232021; } }
 .githubSVG {
   fill: #58b882; }
 

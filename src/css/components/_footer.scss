@@ -25,3 +25,9 @@
 	vertical-align: bottom;
 	opacity: 0.75;
 }
+
+@media (prefers-color-scheme: dark) {
+	.linkedInLogoWhitespace {
+		fill: $black;
+	}
+}

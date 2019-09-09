@@ -1,0 +1,48 @@
+.allWork {
+	border-left: solid $alt-color-three 1px;
+	padding: 0.5rem 0 0.5rem 1rem;
+	margin: 0 auto;
+	width: 300px;
+}
+
+.workContainer {
+	margin: 0 auto;
+}
+
+.individualWork {
+	position: relative;
+	margin-bottom: 3rem;
+}
+
+.individualWork:last-child {
+	margin-bottom: 0;
+}
+
+.timelineDot {
+	color: $alt-color-three;
+	position: absolute;
+	font-size: 1.3rem;
+	top: -0.4rem;
+	left: -1.33rem;
+}
+
+.topTimelineDot {
+	font-size: 2rem;
+	top: -0.75rem;
+	left: -1.53rem;
+}
+
+.workTitle {
+	font-weight: 600;
+	margin-bottom: 0.2rem;
+}
+
+.workCompany {
+	margin-top: 0;
+	margin-bottom: 0.5rem;
+	font-style: italic;
+}
+
+.workDescription {
+	margin-top: 0;
+}

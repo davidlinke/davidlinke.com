@@ -76,7 +76,6 @@ h1 {
 
 h2 {
 	font-family: $style-font;
-	// color: $alt-color;
 	font-weight: 800;
 	font-size: 1.3rem;
 	margin-top: 0;
@@ -147,4 +146,20 @@ li:last-child {
 
 .white {
 	color: $white;
+}
+
+@media (prefers-color-scheme: dark) {
+	* {
+		color: $white;
+	}
+	body {
+		background-color: $black;
+	}
+	p,
+	li,
+	.contactInput {
+		color: $white;
+		font-weight: 300;
+		font-size: 0.9rem;
+	}
 }

@@ -12,3 +12,9 @@
 	margin-bottom: 0;
 	text-align: left;
 }
+
+@media (prefers-color-scheme: dark) {
+	.introSubtext {
+		color: $white;
+	}
+}

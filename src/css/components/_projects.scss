@@ -37,6 +37,12 @@ $videoMargin: 30px;
 	fill: $white;
 }
 
+@media (prefers-color-scheme: dark) {
+	.browserBar {
+		fill: $grey;
+	}
+}
+
 .projectVideo {
 	width: 300px;
 	border-radius: 0 0 $videoBorderRadius $videoBorderRadius;
