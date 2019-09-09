@@ -1,20 +1,28 @@
 import React from 'react';
 import projects from '../data/projects.json';
+import GithubLogo from './imageComponents/GithubLogo';
 import Browser from './Browser';
 
 const Projects = () => {
 	return (
 		<div className='outerContainer projectsContainer'>
 			<div className='innerContainer'>
-				<h2>Projects</h2>
+				<h2>PROJECTS</h2>
 
 				<div className='allProjects'>
 					{projects.map((project, index) => {
 						return (
-							<div key={`project${index}`} className='individualProject'>
-								<h4>{project.name}</h4>
-								<p>{project.description}</p>
-								<div className='videoContainer'>
+							<div
+								key={`project${index}`}
+								className={`individualProject ${
+									index % 2 === 0 ? 'leftProject' : 'rightProject'
+								}`}
+							>
+								<div
+									className={`videoContainer ${
+										index % 2 === 0 ? 'leftVideo' : 'rightVideo'
+									}`}
+								>
 									<Browser />
 									<video
 										className='projectVideo'
@@ -25,12 +33,27 @@ const Projects = () => {
 										loop='loop'
 									></video>
 								</div>
-								<h3>Tech Used</h3>
-								<ul>
-									{project.tech.map((technology, i) => {
-										return <li key={`tech${index}_${i}`}>{technology}</li>;
-									})}
-								</ul>
+								<div
+									className={`infoContainer ${
+										index % 2 === 0 ? 'leftProjectInfo' : 'rightProjectInfo'
+									}`}
+								>
+									<div className='projectTitleContainer'>
+										<a href={project.url}>
+											<h4 className='link projectTitle'>{project.name}</h4>
+										</a>
+										<a href={project.github}>
+											<GithubLogo />
+										</a>
+									</div>
+									<p className='projectDescription'>{project.description}</p>
+									<h3>Tech Used:</h3>
+									<ul className='techUsed'>
+										{project.tech.map((technology, i) => {
+											return <li key={`tech${index}_${i}`}>{technology}</li>;
+										})}
+									</ul>
+								</div>
 							</div>
 						);
 					})}

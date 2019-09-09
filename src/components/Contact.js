@@ -5,9 +5,9 @@ const Contact = () => {
 	return (
 		<div className='outerContainer contactContainer' id='contact'>
 			<div className='innerContainer'>
-				<h2>Contact</h2>
+				<h2>CONTACT</h2>
 				{/* Email address encoded with http://www.wbwip.com/wbw/emailencoder.html */}
-				<p>
+				<p className='contactText'>
 					Send me a message here or via{' '}
 					<a href='mailto: &#100;&#097;&#118;&#105;&#100;&#064;&#100;&#097;&#118;&#105;&#100;&#108;&#105;&#110;&#107;&#101;&#046;&#099;&#111;&#109;'>
 						&#100;&#097;&#118;&#105;&#100;&#064;&#100;&#097;&#118;&#105;&#100;&#108;&#105;&#110;&#107;&#101;&#046;&#099;&#111;&#109;

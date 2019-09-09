@@ -3,18 +3,24 @@
 		"name": "Squadformer",
 		"description": "Easily generate groups of people for classrooms or teams. Remembers past groups so groups are not repeated, allows for manual rearranging of groups, allows for toggling people as absent to not include them in groups that day, and more.",
 		"video": "/video/squadformer.mp4",
-		"tech": ["jQuery", "Express"]
+		"tech": ["jQuery", "Express"],
+		"url": "http://www.squadformer.com",
+		"github": "https://github.com/davidlinke/squadformer"
 	},
 	{
 		"name": "Grab The Umbrella?",
 		"description": "Quickly know whether you should bring an umbrella with you today, broken down by morning, afternoon, and evening.",
 		"video": "/video/umbrella.mp4",
-		"tech": ["jQuery", "AJAX"]
+		"tech": ["jQuery", "AJAX"],
+		"url": "https://davidlinke.github.io",
+		"github": "https://github.com/davidlinke/davidlinke.github.io"
 	},
 	{
 		"name": "The Knowledge",
 		"description": "Create and take fun quizzes.",
 		"video": "/video/theknowledge.mp4",
-		"tech": ["React", "Express"]
+		"tech": ["React", "Express"],
+		"url": "http://theknowledge.surge.sh",
+		"github": "https://github.com/davidlinke/theknowledge-frontend"
 	}
 ]

@@ -45,7 +45,8 @@ function ContactForm() {
 
 			{errors.message && <p>Please enter a message.</p>}
 
-			<input type='submit' />
+			<input type='submit' value='Send Message' />
+			<p>DON'T FORGET TO SHOW MESSAGE AFTER SUBMISSION</p>
 		</form>
 	);
 }

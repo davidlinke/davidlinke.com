@@ -4,7 +4,7 @@ const About = () => {
 	return (
 		<div className='outerContainer aboutContainer'>
 			<div className='innerContainer'>
-				<h2>About</h2>
+				<h2>ABOUT</h2>
 				<p>
 					Building things has always been a passion of mine. Starting with legos
 					as a little kid and working my way up to building computers, models,
@@ -36,6 +36,12 @@ const About = () => {
 					engineering bootcamp. I enjoyed every second of it and am always
 					looking towards building and learning something new!
 				</p>
+				<p>
+					When I'm not coding you can find me playing badminton,
+					designing/building wood furniture, perfecting my at home pizza making
+					skills, and automating my home (primarily with homebridge and
+					home-assistant)
+				</p>
 				<h3>Some tech I have been working with:</h3>
 				<ul>
 					<li>JavaScript (ES6)</li>
@@ -46,16 +52,6 @@ const About = () => {
 					<li>Rails</li>
 					<li>Mongo</li>
 					<li>PostgreSQL</li>
-				</ul>
-				<h3>When I'm not coding you can find me:</h3>
-				<ul>
-					<li>Playing badminton</li>
-					<li>Designing and building wood furniture</li>
-					<li>Perfecting the NY style pizza</li>
-					<li>
-						Connecting and automating everything in my home (primarily with
-						homebridge and home-assistant)
-					</li>
 				</ul>
 			</div>
 		</div>

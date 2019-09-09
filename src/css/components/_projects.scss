@@ -1,6 +1,7 @@
 // Project Video Variables
 $videoBorderRadius: 0.3em;
 $videoBoxShadow: 1px 1px 25px 0px rgba(50, 50, 50, 0.5);
+$videoMargin: 30px;
 
 .browser {
 	width: 300px;
@@ -14,29 +15,25 @@ $videoBoxShadow: 1px 1px 25px 0px rgba(50, 50, 50, 0.5);
 
 .browserBar {
 	fill: $black;
+	// fill: $grey;
 }
 
 .leftCircle {
-	fill: #f0582f;
+	// fill: #f0582f;
+	fill: $alt-color-three;
 }
 
 .middleCircle {
-	fill: #fbd303;
+	// fill: #fbd303;
+	fill: #ecd96f;
 }
 
 .rightCircle {
-	fill: #71d456;
-}
-
-.leftCircle,
-.middleCircle,
-.rightCircle {
-	// fill: $primary-color;
+	// fill: #71d456;
+	fill: $alt-color;
 }
 
 .addressBar {
-	// fill: #333842;
-	// fill: $primary-color;
 	fill: $white;
 }
 
@@ -48,4 +45,60 @@ $videoBoxShadow: 1px 1px 25px 0px rgba(50, 50, 50, 0.5);
 
 .videoContainer {
 	width: 300px;
+}
+
+.individualProject {
+	display: flex;
+	padding: 20px 0;
+	// align-items: center;
+}
+
+.individualProject:last-child {
+	padding-bottom: 0;
+}
+
+.rightVideo {
+	margin: 0 0 $videoMargin $videoMargin;
+}
+
+.leftVideo {
+	margin: 0 $videoMargin $videoMargin 0;
+}
+
+.rightProject {
+	flex-direction: row-reverse;
+}
+
+@media only screen and (max-width: 600px) {
+	.videoContainer {
+		margin: 0 auto $videoMargin auto;
+	}
+	.individualProject {
+		display: block;
+		padding: 40px 0;
+	}
+}
+
+.githubLogo {
+	display: inline-block;
+	width: 1.4rem;
+	margin-left: 1rem;
+	vertical-align: bottom;
+	opacity: 0.75;
+}
+
+.projectTitle {
+	display: inline;
+}
+
+.projectTitleContainer {
+	margin-bottom: 1.5rem;
+}
+
+.projectDescription {
+	margin-bottom: 1.5rem;
+}
+
+.techUsed {
+	justify-content: flex-start;
 }

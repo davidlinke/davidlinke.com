@@ -1,6 +1,3 @@
-// Import Fonts
-@import url('https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i|Nunito+Sans:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i&display=swap');
-
 * {
 	color: $black;
 	font-family: $primary-font;
@@ -10,11 +7,21 @@ body {
 	background-color: $white;
 }
 
-a {
+a,
+.link {
 	text-decoration: none;
+	color: $primary-color;
 }
 
-button {
+a:hover,
+.link:hover,
+a:hover .githubLogo .githubSVG {
+	color: darken($primary-color, 10%);
+	fill: darken($primary-color, 10%);
+}
+
+button,
+input[type='submit'] {
 	background-color: $primary-color;
 	box-shadow: none !important;
 	border: 1px solid $primary-color;
@@ -36,11 +43,12 @@ button {
 .noOutline {
 	border: none;
 	background-color: transparent;
-	color: $black;
+	color: $primary-color;
 }
 
-button:hover {
-	background-color: darken($primary-color, 5%);
+button:hover,
+input[type='submit']:hover {
+	background-color: darken($primary-color, 10%);
 }
 
 .noOutline:hover {
@@ -53,30 +61,47 @@ button:hover {
 
 .innerContainer {
 	max-width: 800px;
-	margin: 0 auto;
+	margin: 3rem auto 3rem auto;
 }
 
 h1 {
 	font-family: $style-font;
-	font-weight: 600;
+	font-weight: 800;
 	font-size: 2rem;
+	margin-top: 3rem;
+	margin-bottom: 0.3rem;
 }
 
 h2 {
 	font-family: $style-font;
-	font-weight: 300;
+	// color: $alt-color;
+	font-weight: 800;
 	font-size: 1.3rem;
+	margin-top: 0;
+	margin-bottom: 2rem;
+	text-align: center;
 }
 
 h3 {
 	font-family: $style-font;
-	font-weight: 400;
-	font-size: 1rem;
+	color: $alt-color-three;
+	font-weight: 800;
+	font-size: 0.9rem;
+	font-style: italic;
+	margin-bottom: 0.3rem;
+}
+
+h4 {
+	font-family: $style-font;
+	font-weight: 200;
+	font-size: 1.6rem;
+	margin: 0;
 }
 
 p,
-li {
-	font-family: $primary-font;
+li,
+.contactInput {
+	color: $grey;
 	font-weight: 300;
 	font-size: 0.9rem;
 }
@@ -85,10 +110,37 @@ ul {
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
 }
 
-.orange {
+li {
+	margin: 0 20px 0.3rem 0;
+}
+
+li:first-child {
+	margin-left: 0;
+}
+
+li:last-child {
+	margin-right: 0;
+}
+
+.primary {
 	color: $primary-color;
+}
+
+.alt {
+	color: $alt-color;
+}
+
+.alt2 {
+	color: $alt-color-two;
+}
+
+.alt3 {
+	color: $alt-color-three;
 }
 
 .white {
