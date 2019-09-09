@@ -39,10 +39,18 @@ const Projects = () => {
 									}`}
 								>
 									<div className='projectTitleContainer'>
-										<a href={project.url}>
+										<a
+											href={project.url}
+											target='_blank'
+											rel='noopener noreferrer'
+										>
 											<h4 className='link projectTitle'>{project.name}</h4>
 										</a>
-										<a href={project.github}>
+										<a
+											href={project.github}
+											target='_blank'
+											rel='noopener noreferrer'
+										>
 											<GithubLogo />
 										</a>
 									</div>

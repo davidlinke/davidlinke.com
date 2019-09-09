@@ -1,3 +1,27 @@
 .footerContainer {
 	text-align: center;
+	padding-bottom: 5rem;
+}
+
+.linkedInLogoFill {
+	fill: $primary-color;
+}
+.linkedInLogoWhitespace {
+	fill: $white;
+}
+
+.githubLogo {
+	display: inline-block;
+	width: 1.4rem;
+	margin-left: 1rem;
+	vertical-align: bottom;
+	opacity: 0.75;
+}
+
+.linkedInLogo {
+	display: inline-block;
+	width: 1.4rem;
+	margin-left: 1rem;
+	vertical-align: bottom;
+	opacity: 0.75;
 }

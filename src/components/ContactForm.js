@@ -1,18 +1,26 @@
-import React from 'react';
+import React, { useState } from 'react';
 import useForm from 'react-hook-form';
 import axios from 'axios';
 
 function ContactForm() {
 	const { register, handleSubmit, errors } = useForm();
 
+	const [submitState, setSubmitState] = useState('notYetSubmitted');
+
 	const onSubmit = async (data, e) => {
 		console.log(data);
 		e.target.reset();
-		const response = await axios.post(
-			'https://mailthis.to/david@davidlinke.com',
-			data
-		);
+		const response = await axios.post('https://mailthis.to/davidlinke', data);
 		console.log(response);
+		console.log(response.status);
+		console.log(typeof response.status);
+		if (response.status === 200) {
+			setSubmitState('success');
+		} else {
+			setSubmitState('error');
+		}
+
+		console.log(submitState);
 	};
 
 	return (
@@ -23,7 +31,9 @@ function ContactForm() {
 				ref={register({ required: true })}
 				className='contactInput'
 			/>
-			{errors.name && <p>Please enter your name.</p>}
+			{errors.name && (
+				<p className='formErrorMessage'>Please enter your name.</p>
+			)}
 			<input
 				name='email'
 				placeholder='Email'
@@ -34,7 +44,9 @@ function ContactForm() {
 				className='contactInput'
 			/>
 
-			{errors.email && <p>Please enter a valid email address.</p>}
+			{errors.email && (
+				<p className='formErrorMessage'>Please enter a valid email address.</p>
+			)}
 
 			<textarea
 				name='message'
@@ -43,10 +55,22 @@ function ContactForm() {
 				className='contactInput'
 			/>
 
-			{errors.message && <p>Please enter a message.</p>}
+			{errors.message && (
+				<p className='formErrorMessage'>Please enter a message.</p>
+			)}
 
 			<input type='submit' value='Send Message' />
-			<p>DON'T FORGET TO SHOW MESSAGE AFTER SUBMISSION</p>
+
+			{submitState === 'success' && (
+				<p className='formSuccessMessage'>
+					Thank you for contacting me, I will respond as quickly as I can!
+				</p>
+			)}
+			{submitState === 'error' && (
+				<p className='formErrorMessage formFailToSendMessage'>
+					Error sending message. Please try again or email me directly.
+				</p>
+			)}
 		</form>
 	);
 }

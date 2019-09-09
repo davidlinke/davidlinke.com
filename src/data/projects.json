@@ -1,25 +1,31 @@
 [
 	{
 		"name": "Squadformer",
-		"description": "Easily generate groups of people for classrooms or teams. Remembers past groups so groups are not repeated, allows for manual rearranging of groups, allows for toggling people as absent to not include them in groups that day, and more.",
+		"description": "Easily generate random groups of people for classrooms or teams. Remembers past groups so groups are not repeated and lets you know when you have exhausted possible random combinations. Allows for manual rearranging and creation of groups, adding, removing, and marking people as absent to not include them in group generation, flexible group sizes with suggestions for evenly distributed groups, and a history of generated groups with links you can send out to so people know their group assignments.",
 		"video": "/video/squadformer.mp4",
-		"tech": ["jQuery", "Express"],
+		"tech": [
+			"HTML & CSS",
+			"Express",
+			"EJS",
+			"Javascript & jQuery",
+			"CSS Animations"
+		],
 		"url": "http://www.squadformer.com",
 		"github": "https://github.com/davidlinke/squadformer"
 	},
 	{
 		"name": "Grab The Umbrella?",
-		"description": "Quickly know whether you should bring an umbrella with you today, broken down by morning, afternoon, and evening.",
+		"description": "A responsively designed utilitarian website that quickly lets you know if you should grab your umbrella on your way out today. Utilizes 4 API's to seamlessly get a users location via their IP address and show the upcoming precipitation forecast. This was my first attempt at SVG animations and I learned a lot in the process of getting them to work how I envisioned.",
 		"video": "/video/umbrella.mp4",
-		"tech": ["jQuery", "AJAX"],
+		"tech": ["HTML & CSS", "JavaScript & jQuery", "SVG Animations", "AJAX"],
 		"url": "https://davidlinke.github.io",
 		"github": "https://github.com/davidlinke/davidlinke.github.io"
 	},
 	{
 		"name": "The Knowledge",
-		"description": "Create and take fun quizzes.",
+		"description": "Create and take fun quizzes! Featuring interactive quizzes of variable length where users can be entertained or tested. Includes account creation and login to manage quizzes, a flexible and dynamic create quiz form, and a \"global\" quiz play count. This was a group project where I was responsible for the frontend but also contributed to the sessions/authorization functionality on the backend.",
 		"video": "/video/theknowledge.mp4",
-		"tech": ["React", "Express"],
+		"tech": ["MongoDB", "Express", "React", "Node.js"],
 		"url": "http://theknowledge.surge.sh",
 		"github": "https://github.com/davidlinke/theknowledge-frontend"
 	}

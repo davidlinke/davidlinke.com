@@ -13,7 +13,9 @@ a,
 
 a:hover,
 .link:hover,
-a:hover .githubLogo .githubSVG {
+a:hover .githubLogo .githubSVG,
+a:hover .linkedInLogo .linkedInLogoFill,
+.noOutline:hover {
   color: #429b69;
   fill: #429b69; }
 
@@ -331,11 +333,46 @@ li:last-child {
 .contactText {
   text-align: center; }
 
+textarea {
+  height: 8rem; }
+
+.formErrorMessage {
+  color: #ec9c6f;
+  margin-top: -0.7rem;
+  padding-top: 0; }
+
+.formFailToSendMessage {
+  margin-top: 0; }
+
+.formSuccessMessage {
+  color: #58b882; }
+
 @media only screen and (max-width: 600px) {
   .contactInput {
     width: 100%; } }
 .footerContainer {
-  text-align: center; }
+  text-align: center;
+  padding-bottom: 5rem; }
+
+.linkedInLogoFill {
+  fill: #58b882; }
+
+.linkedInLogoWhitespace {
+  fill: #f1f1f1; }
+
+.githubLogo {
+  display: inline-block;
+  width: 1.4rem;
+  margin-left: 1rem;
+  vertical-align: bottom;
+  opacity: 0.75; }
+
+.linkedInLogo {
+  display: inline-block;
+  width: 1.4rem;
+  margin-left: 1rem;
+  vertical-align: bottom;
+  opacity: 0.75; }
 
 .githubSVG {
   fill: #58b882; }

@@ -15,7 +15,9 @@ a,
 
 a:hover,
 .link:hover,
-a:hover .githubLogo .githubSVG {
+a:hover .githubLogo .githubSVG,
+a:hover .linkedInLogo .linkedInLogoFill,
+.noOutline:hover {
 	color: darken($primary-color, 10%);
 	fill: darken($primary-color, 10%);
 }
