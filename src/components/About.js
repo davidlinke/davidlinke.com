@@ -14,27 +14,28 @@ const About = () => {
 					programming circuits.
 				</p>
 				<p>
-					While attending school smartphones started to come out and I was
-					really excited at the prospects of carrying a computer in your pocket.
+					While attending school, smartphones started to come out and I was
+					really excited at the prospects of carrying a computer in my pocket.
 					This led me to join Applico post graduation, where I worked as a
 					Product Manager leading the design and development of mobile apps for
 					external clients. At Applico I honed my skills in both creating
 					software and business strategy. After a few years at Applico an
 					opportunity arose to co-found a cleanroom products manufacturing
 					company and I jumped at the chance. Leveraging all the knowledge I
-					accumulated in product management I worked to simultaneously
+					accumulated in product management, I worked to simultaneously
 					strategize how to market and sell products in the cleanroom industry,
 					develop products better than those that currently exist, and create an
 					eCommerce site.
 				</p>
 				<p>
-					After everything all of these were accomplished at Zolab I focused
-					primarily on marketing and sales. I started to miss that creative and
-					collaborative element in my job and decided getting back to my
-					engineering roots was the path I wanted to follow. I started
-					programming on my own before attending a full stack software
-					engineering bootcamp. I enjoyed every second of it and am always
-					looking towards building and learning something new!
+					Setting up a new business was equally challending and rewarding. Once
+					the business was up and running I focused primarily on marketing and
+					sales. I started to miss that creative and collaborative element in my
+					job and decided that getting back to my engineering roots was the path
+					I wanted to follow. I started getting back into programming on my own
+					before attending a full stack software engineering bootcamp. I enjoyed
+					every second of it and am always looking towards building and learning
+					something new!
 				</p>
 				<p>
 					When I'm not coding you can find me playing badminton,

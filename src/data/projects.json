@@ -1,7 +1,7 @@
 [
 	{
 		"name": "Squadformer",
-		"description": "Easily generate random groups of people for classrooms or teams. Remembers past groups so groups are not repeated and lets you know when you have exhausted possible random combinations. Allows for manual rearranging and creation of groups, adding, removing, and marking people as absent to not include them in group generation, flexible group sizes with suggestions for evenly distributed groups, and a history of generated groups with links you can send out to so people know their group assignments.",
+		"description": "Easily generates random groups of people for classrooms or teams. Remembers past groupings so groups are not repeated and also lets you know when you have exhausted possible random combinations. Allows for manual rearranging and creation of groups, adding, removing, and marking people as absent to not include them in group generation, flexible group sizes with suggestions for evenly distributed groups, and a history of generated groups with links you can share so people know their group assignments.",
 		"video": "/video/squadformer.mp4",
 		"tech": [
 			"HTML & CSS",
@@ -15,7 +15,7 @@
 	},
 	{
 		"name": "Grab The Umbrella?",
-		"description": "A responsively designed utilitarian website that quickly lets you know if you should grab your umbrella on your way out today. Utilizes 4 API's to seamlessly get a users location via their IP address and show the upcoming precipitation forecast. This was my first attempt at SVG animations and I learned a lot in the process of getting them to work how I envisioned.",
+		"description": "A responsively designed utilitarian website that quickly lets you know if you should grab your umbrella on your way out that day. Utilizes 4 API's to seamlessly get a users location via their IP address and show the upcoming precipitation forecast. This was my first attempt at SVG animations and I learned a lot in the process of building them to work and look how I envisioned.",
 		"video": "/video/umbrella.mp4",
 		"tech": ["HTML & CSS", "JavaScript & jQuery", "SVG Animations", "AJAX"],
 		"url": "https://davidlinke.github.io",
