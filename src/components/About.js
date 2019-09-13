@@ -28,7 +28,7 @@ const About = () => {
 					eCommerce site.
 				</p>
 				<p>
-					Setting up a new business was equally challending and rewarding. Once
+					Setting up a new business was equally challenging and rewarding. Once
 					the business was up and running I focused primarily on marketing and
 					sales. I started to miss that creative and collaborative element in my
 					job and decided that getting back to my engineering roots was the path
