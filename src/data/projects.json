@@ -2,7 +2,7 @@
 	{
 		"name": "PodDialogue",
 		"description": "Read and contribute podcast transcripts. Includes the ability to add a new podcast, automatically pulling its information and episode data from its RSS feed. User can pull new episodes and add episode transcripts for viewing.",
-		"video": "/video/squadformer.mp4",
+		"video": "/video/poddialogue.mp4",
 		"tech": ["React", "Rails", "GraphQL", "Apollo", "PostgreSQL"],
 		"url": "https://poddialogue.com",
 		"github": "https://github.com/davidlinke/podcasttranscripts_frontend"
