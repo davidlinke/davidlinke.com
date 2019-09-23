@@ -15,21 +15,17 @@ $videoMargin: 30px;
 
 .browserBar {
 	fill: $black;
-	// fill: $grey;
 }
 
 .leftCircle {
-	// fill: #f0582f;
 	fill: $alt-color-three;
 }
 
 .middleCircle {
-	// fill: #fbd303;
 	fill: #ecd96f;
 }
 
 .rightCircle {
-	// fill: #71d456;
 	fill: $alt-color;
 }
 
@@ -37,15 +33,16 @@ $videoMargin: 30px;
 	fill: $white;
 }
 
-@media (prefers-color-scheme: dark) {
-	.browserBar {
-		fill: $grey;
-	}
-}
+// @media (prefers-color-scheme: dark) {
+// 	.browserBar {
+// 		fill: $grey;
+// 	}
+// }
 
 .projectVideo {
 	width: 300px;
-	border-radius: 0 0 $videoBorderRadius $videoBorderRadius;
+	// border-radius: 0 0 $videoBorderRadius $videoBorderRadius;
+	// -webkit-border-radius: 0 0 $videoBorderRadius $videoBorderRadius;
 	box-shadow: $videoBoxShadow;
 }
 
@@ -56,7 +53,6 @@ $videoMargin: 30px;
 .individualProject {
 	display: flex;
 	padding: 20px 0;
-	// align-items: center;
 }
 
 .individualProject:last-child {

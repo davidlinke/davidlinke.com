@@ -148,18 +148,18 @@ li:last-child {
 	color: $white;
 }
 
-@media (prefers-color-scheme: dark) {
-	* {
-		color: $white;
-	}
-	body {
-		background-color: $black;
-	}
-	p,
-	li,
-	.contactInput {
-		color: $white;
-		font-weight: 300;
-		font-size: 0.9rem;
-	}
-}
+// @media (prefers-color-scheme: dark) {
+// 	* {
+// 		color: $white;
+// 	}
+// 	body {
+// 		background-color: $black;
+// 	}
+// 	p,
+// 	li,
+// 	.contactInput {
+// 		color: $white;
+// 		font-weight: 300;
+// 		font-size: 0.9rem;
+// 	}
+// }
