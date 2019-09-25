@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import useForm from 'react-hook-form';
-// import axios from 'axios';
 
 const encode = data => {
 	return Object.keys(data)
@@ -14,26 +13,7 @@ function ContactForm() {
 	const [submitState, setSubmitState] = useState('notYetSubmitted');
 
 	const onSubmit = async (data, e) => {
-		console.log(data);
 		e.target.reset();
-
-		// let config = {
-		// 	headers: {
-		// 		'Content-Type': 'application/x-www-form-urlencoded'
-		// 	}
-		// };
-
-		// const response = await axios.post('/', data, config);
-		// console.log(response);
-		// console.log(response.status);
-		// console.log(typeof response.status);
-		// if (response.status === 200) {
-		// 	setSubmitState('success');
-		// 	console.log(submitState);
-		// } else {
-		// 	setSubmitState('error');
-		// 	console.log(submitState);
-		// }
 
 		fetch('/', {
 			method: 'POST',
@@ -42,17 +22,16 @@ function ContactForm() {
 		})
 			.then(function(response) {
 				if (response.status === 200) {
-					console.log(response);
 					setSubmitState('success');
 				} else {
-					console.log(
-						`Error: Status ${response.status}. ${response.statusText}`
-					);
+					// console.log(
+					// 	`Error: Status ${response.status}. ${response.statusText}`
+					// );
 					setSubmitState('error');
 				}
 			})
 			.catch(function(error) {
-				console.log(error);
+				// console.log(error);
 				setSubmitState('error');
 			});
 	};
