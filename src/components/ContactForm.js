@@ -10,21 +10,33 @@ function ContactForm() {
 	const onSubmit = async (data, e) => {
 		console.log(data);
 		e.target.reset();
-		const response = await axios.post('https://mailthis.to/davidlinke', data);
+
+		let config = {
+			headers: {
+				'Content-Type': 'application/x-www-form-urlencoded'
+			}
+		};
+
+		const response = await axios.post('/', data, config);
 		console.log(response);
 		console.log(response.status);
 		console.log(typeof response.status);
 		if (response.status === 200) {
 			setSubmitState('success');
+			console.log(submitState);
 		} else {
 			setSubmitState('error');
+			console.log(submitState);
 		}
-
-		console.log(submitState);
 	};
 
 	return (
-		<form className='contactForm' onSubmit={handleSubmit(onSubmit)}>
+		<form
+			name='contactForm'
+			className='contactForm'
+			onSubmit={handleSubmit(onSubmit)}
+		>
+			<input type='hidden' name='form-name' value='contactForm' />
 			<input
 				name='name'
 				placeholder='Name'
