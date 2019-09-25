@@ -1,6 +1,12 @@
 import React, { useState } from 'react';
 import useForm from 'react-hook-form';
-import axios from 'axios';
+// import axios from 'axios';
+
+const encode = data => {
+	return Object.keys(data)
+		.map(key => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
+		.join('&');
+};
 
 function ContactForm() {
 	const { register, handleSubmit, errors } = useForm();
@@ -34,8 +40,21 @@ function ContactForm() {
 			headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
 			body: encode({ 'form-name': 'contactForm', ...data })
 		})
-			.then(() => console.log('success'))
-			.catch(error => console.log(error));
+			.then(function(response) {
+				if (response.status === 200) {
+					console.log(response);
+					setSubmitState('success');
+				} else {
+					console.log(
+						`Error: Status ${response.status}. ${response.statusText}`
+					);
+					setSubmitState('error');
+				}
+			})
+			.catch(function(error) {
+				console.log(error);
+				setSubmitState('error');
+			});
 	};
 
 	return (
