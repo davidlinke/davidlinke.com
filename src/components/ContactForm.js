@@ -11,23 +11,31 @@ function ContactForm() {
 		console.log(data);
 		e.target.reset();
 
-		let config = {
-			headers: {
-				'Content-Type': 'application/x-www-form-urlencoded'
-			}
-		};
+		// let config = {
+		// 	headers: {
+		// 		'Content-Type': 'application/x-www-form-urlencoded'
+		// 	}
+		// };
 
-		const response = await axios.post('/', data, config);
-		console.log(response);
-		console.log(response.status);
-		console.log(typeof response.status);
-		if (response.status === 200) {
-			setSubmitState('success');
-			console.log(submitState);
-		} else {
-			setSubmitState('error');
-			console.log(submitState);
-		}
+		// const response = await axios.post('/', data, config);
+		// console.log(response);
+		// console.log(response.status);
+		// console.log(typeof response.status);
+		// if (response.status === 200) {
+		// 	setSubmitState('success');
+		// 	console.log(submitState);
+		// } else {
+		// 	setSubmitState('error');
+		// 	console.log(submitState);
+		// }
+
+		fetch('/', {
+			method: 'POST',
+			headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+			body: encode({ 'form-name': 'contactForm', ...data })
+		})
+			.then(() => console.log('success'))
+			.catch(error => console.log(error));
 	};
 
 	return (
