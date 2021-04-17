@@ -27,13 +27,13 @@ const Navigation = () => {
 				<button className='noOutline' onClick={() => scrollTo('contact')}>
 					Contact
 				</button>
-				<form
+				{/* <form
 					className='buttonForm'
 					action='davidlinke_resume.pdf'
 					method='get'
 				>
 					<button>Resume</button>
-				</form>
+				</form> */}
 			</div>
 		</div>
 	);
