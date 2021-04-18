@@ -1,26 +1,32 @@
 @import url("https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,300i,400,600,800,800i,900&display=swap");
-* {
-  color: #232021;
-  font-family: "Nunito Sans", sans-serif; }
-
 body {
-  background-color: #f1f1f1; }
+  background-color: #f1f1f1;
+  color: #232021;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+body.dark {
+  background-color: #232021;
+  color: #f1f1f1;
+}
 
 a,
 .link {
   text-decoration: none;
-  color: #58b882; }
+  color: #58b882;
+}
 
 a:hover,
 .link:hover,
-a:hover .githubLogo .githubSVG,
-a:hover .linkedInLogo .linkedInLogoFill,
-.noOutline:hover {
+a:hover .github-logo .github-svg,
+a:hover .linkedin-logo .linkedin-logo-fill,
+.no-outline:hover {
   color: #429b69;
-  fill: #429b69; }
+  fill: #429b69;
+}
 
 button,
-input[type='submit'] {
+input[type=submit] {
   background-color: #58b882;
   box-shadow: none !important;
   border: 1px solid #58b882;
@@ -32,36 +38,54 @@ input[type='submit'] {
   text-transform: capitalize;
   font-size: 0.8rem;
   cursor: pointer;
-  color: #f1f1f1; }
+  color: #f1f1f1;
+}
 
-.buttonForm {
-  display: inline; }
+body.dark button,
+body.dark input[type=submit] {
+  color: #232021;
+}
+body.dark input:not([type=submit]),
+body.dark textarea {
+  background-color: #4e4b4c;
+}
 
-.noOutline {
+.button-form {
+  display: inline;
+}
+
+.no-outline,
+body.dark .no-outline {
   border: none;
   background-color: transparent;
-  color: #58b882; }
+  color: #58b882;
+}
 
 button:hover,
-input[type='submit']:hover {
-  background-color: #429b69; }
+input[type=submit]:hover {
+  background-color: #429b69;
+}
 
-.noOutline:hover {
-  background-color: transparent; }
+.no-outline:hover {
+  background-color: transparent;
+}
 
-.outerContainer {
-  padding: 1rem; }
+.outer-container {
+  padding: 1rem;
+}
 
-.innerContainer {
+.inner-container {
   max-width: 800px;
-  margin: 3rem auto 3rem auto; }
+  margin: 3rem auto 3rem auto;
+}
 
 h1 {
   font-family: "Nunito Sans", sans-serif;
   font-weight: 800;
   font-size: 2rem;
   margin-top: 3rem;
-  margin-bottom: 0.3rem; }
+  margin-bottom: 0.3rem;
+}
 
 h2 {
   font-family: "Nunito Sans", sans-serif;
@@ -69,7 +93,8 @@ h2 {
   font-size: 1.3rem;
   margin-top: 0;
   margin-bottom: 2rem;
-  text-align: center; }
+  text-align: center;
+}
 
 h3 {
   font-family: "Nunito Sans", sans-serif;
@@ -77,20 +102,29 @@ h3 {
   font-weight: 800;
   font-size: 0.9rem;
   font-style: italic;
-  margin-bottom: 0.3rem; }
+  margin-bottom: 0.3rem;
+}
 
 h4 {
   font-family: "Nunito Sans", sans-serif;
   font-weight: 200;
   font-size: 1.6rem;
-  margin: 0; }
+  margin: 0;
+}
 
 p,
 li,
-.contactInput {
+.contact-input {
   color: #4e4b4c;
   font-weight: 300;
-  font-size: 0.9rem; }
+  font-size: 0.9rem;
+}
+
+body.dark p,
+body.dark li,
+body.dark .contact-input {
+  color: #f1f1f1;
+}
 
 ul {
   list-style-type: none;
@@ -98,322 +132,396 @@ ul {
   padding: 0;
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+}
 
 li {
-  margin: 0 20px 0.3rem 0; }
+  margin: 0 20px 0.3rem 0;
+}
 
 li:first-child {
-  margin-left: 0; }
+  margin-left: 0;
+}
 
 li:last-child {
-  margin-right: 0; }
+  margin-right: 0;
+}
 
 .primary {
-  color: #58b882; }
+  color: #58b882;
+}
 
 .alt {
-  color: #58b882; }
+  color: #58b882;
+}
 
 .alt2 {
-  color: #8a6fec; }
+  color: #8a6fec;
+}
 
 .alt3 {
-  color: #ec9c6f; }
+  color: #ec9c6f;
+}
 
 .white {
-  color: #f1f1f1; }
+  color: #f1f1f1;
+}
 
-.navContainer {
+.nav-container {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
-  align-items: center; }
+  align-items: center;
+}
 
-.navLogo {
+.nav-logo {
   display: block;
-  position: relative;
   cursor: pointer;
-  width: 3rem;
-  transition: width 0.5s; }
-
-.navLogo:hover {
-  width: 10rem;
-  transition: width 0.5s; }
-
-.logoLetter {
   font-family: "Nunito Sans", sans-serif;
   font-size: 2rem;
   font-weight: 900;
   color: #58b882;
-  display: inline; }
+}
 
-.L {
-  position: absolute;
-  left: 1.45rem;
-  transition: all 0.5s;
-  transition-delay: 0.24s; }
-
-.logoSubLetter {
-  position: absolute;
-  color: #58b882;
-  font-size: 1.8rem;
-  opacity: 0;
-  transition: all 0.5s; }
-
-.letter1 {
-  left: 1.5rem;
-  transition-delay: 0.28s; }
-
-.letter2 {
-  left: 2.35rem;
-  transition-delay: 0.24s; }
-
-.letter3 {
-  left: 3.25rem;
-  transition-delay: 0.2s; }
-
-.letter4 {
-  left: 3.7rem;
-  transition-delay: 0.16s; }
-
-.letter5 {
-  left: 6.2rem;
-  transition-delay: 0.12s; }
-
-.letter6 {
-  left: 6.65rem;
-  transition-delay: 0.08s; }
-
-.letter7 {
-  left: 7.55rem;
-  transition-delay: 0.04s; }
-
-.letter8 {
-  left: 8.45rem;
-  transition-delay: 0s; }
-
-.navLogo:hover .logoSubLetter {
-  opacity: 1; }
-
-.navLogo:hover .letter1 {
-  transition-delay: 0s; }
-
-.navLogo:hover .letter2 {
-  transition-delay: 0.04s; }
-
-.navLogo:hover .letter3 {
-  transition-delay: 0.08s; }
-
-.navLogo:hover .letter4 {
-  transition-delay: 0.12s; }
-
-.navLogo:hover .letter5 {
-  transition-delay: 0.16s; }
-
-.navLogo:hover .letter6 {
-  transition-delay: 0.2s; }
-
-.navLogo:hover .letter7 {
-  transition-delay: 0.24s; }
-
-.navLogo:hover .letter8 {
-  transition-delay: 0.28s; }
-
-.navLogo:hover .L {
-  left: 5rem;
-  transition: all 0.5s; }
-
-@media only screen and (max-width: 600px) {
-  .navContainer {
-    flex-flow: column nowrap; }
-
-  .links {
-    display: none; } }
 .headshot {
   width: 150px;
   border-radius: 50%;
   display: block;
-  margin: 0 auto; }
+  margin: 0 auto;
+}
 
-.introSubtext {
+.intro-subtext {
   font-weight: 300;
-  color: #232021;
   margin-bottom: 0;
-  text-align: left; }
+  text-align: left;
+}
 
 @media only screen and (max-width: 640px) {
   ul {
-    justify-content: flex-start; } }
+    justify-content: flex-start;
+  }
+}
 .browser {
   width: 300px;
-  height: 25px; }
+  height: 25px;
+}
 
-.browserSVG {
+.browse-svg {
   border-radius: 0.3em 0.3em 0 0;
-  box-shadow: 1px 1px 25px 0px rgba(50, 50, 50, 0.5); }
+  box-shadow: 1px 1px 25px 0px rgba(50, 50, 50, 0.5);
+}
 
-.browserBar {
-  fill: #232021; }
+.browser-bar {
+  fill: #232021;
+}
 
-.leftCircle {
-  fill: #ec9c6f; }
+.left-circle {
+  fill: #ec9c6f;
+}
 
-.middleCircle {
-  fill: #ecd96f; }
+.middle-circle {
+  fill: #ecd96f;
+}
 
-.rightCircle {
-  fill: #58b882; }
+.right-circle {
+  fill: #58b882;
+}
 
-.addressBar {
-  fill: #f1f1f1; }
+.address-bar {
+  fill: #f1f1f1;
+}
 
-.projectVideo {
+.project-video {
   width: 300px;
-  box-shadow: 1px 1px 25px 0px rgba(50, 50, 50, 0.5); }
+  box-shadow: 1px 1px 25px 0px rgba(50, 50, 50, 0.5);
+}
 
-.videoContainer {
-  width: 300px; }
+.video-container {
+  width: 300px;
+}
 
-.individualProject {
+.individual-project {
   display: flex;
-  padding: 20px 0; }
+  padding: 20px 0;
+}
 
-.individualProject:last-child {
-  padding-bottom: 0; }
+.individual-project:last-child {
+  padding-bottom: 0;
+}
 
-.rightVideo {
-  margin: 0 0 30px 30px; }
+.right-video {
+  margin: 0 0 30px 30px;
+}
 
-.leftVideo {
-  margin: 0 30px 30px 0; }
+.left-video {
+  margin: 0 30px 30px 0;
+}
 
-.rightProject {
-  flex-direction: row-reverse; }
+.right-project {
+  flex-direction: row-reverse;
+}
 
 @media only screen and (max-width: 600px) {
-  .videoContainer {
-    margin: 0 auto 30px auto; }
+  .video-container {
+    margin: 0 auto 30px auto;
+  }
 
-  .individualProject {
+  .individual-project {
     display: block;
-    padding: 40px 0; } }
-.githubLogo {
+    padding: 40px 0;
+  }
+}
+.github-logo {
   display: inline-block;
   width: 1.4rem;
   margin-left: 1rem;
   vertical-align: bottom;
-  opacity: 0.75; }
+  opacity: 0.75;
+}
 
-.projectTitle {
-  display: inline; }
+.project-title {
+  display: inline;
+}
 
-.projectTitleContainer {
-  margin-bottom: 1.5rem; }
+.project-title-container {
+  margin-bottom: 1.5rem;
+}
 
-.projectDescription {
-  margin-bottom: 1.5rem; }
+.project-description {
+  margin-bottom: 1.5rem;
+}
 
-.techUsed {
-  justify-content: flex-start; }
+.tech-used {
+  justify-content: flex-start;
+}
 
-.allWork {
+body.dark .browse-svg {
+  box-shadow: none;
+}
+body.dark .project-video {
+  box-shadow: none;
+}
+body.dark .browser-bar {
+  fill: #f1f1f1;
+}
+
+.all-work {
   border-left: solid #ec9c6f 1px;
   padding: 0.5rem 0 0.5rem 1rem;
   margin: 0 auto;
-  width: 300px; }
+  width: 300px;
+}
 
-.workContainer {
-  margin: 0 auto; }
+.work-container {
+  margin: 0 auto;
+}
 
-.individualWork {
+.individual-work {
   position: relative;
-  margin-bottom: 3rem; }
+  margin-bottom: 3rem;
+}
 
-.individualWork:last-child {
-  margin-bottom: 0; }
+.individual-work:last-child {
+  margin-bottom: 0;
+}
 
-.timelineDot {
+.timeline-dot {
   color: #ec9c6f;
   position: absolute;
   font-size: 1.3rem;
   top: -0.4rem;
-  left: -1.33rem; }
+  left: -1.33rem;
+}
 
-.topTimelineDot {
+.top-timeline-dot {
   font-size: 2rem;
   top: -0.75rem;
-  left: -1.53rem; }
+  left: -1.53rem;
+}
 
-.workTitle {
+.work-title {
   font-weight: 600;
-  margin-bottom: 0.2rem; }
+  margin-bottom: 0.2rem;
+}
 
-.workCompany {
+.work-company {
   margin-top: 0;
   margin-bottom: 0.5rem;
-  font-style: italic; }
+  font-style: italic;
+}
 
-.workDescription {
-  margin-top: 0; }
+.work-description {
+  margin-top: 0;
+}
 
-.contactInput {
+.contact-input {
   box-sizing: border-box;
   border: none;
   width: 70%;
   margin: 1rem auto;
   padding: 0.5rem;
-  display: block; }
+  display: block;
+}
 
 .contactForm {
-  margin-top: 2rem; }
+  margin-top: 2rem;
+}
 
 .contactForm,
-.contactText {
-  text-align: center; }
+.contact-text {
+  text-align: center;
+}
 
 textarea {
-  height: 8rem; }
+  height: 8rem;
+}
 
-.formErrorMessage {
+.form-error-message {
   color: #ec9c6f;
   margin-top: -0.7rem;
-  padding-top: 0; }
+  padding-top: 0;
+}
 
-.formFailToSendMessage {
-  margin-top: 0; }
+.form-fail-to-send-message {
+  margin-top: 0;
+}
 
-.formSuccessMessage {
-  color: #58b882; }
+.form-success-message {
+  color: #58b882;
+}
 
 @media only screen and (max-width: 600px) {
-  .contactInput {
-    width: 100%; } }
-.footerContainer {
+  .contact-input {
+    width: 100%;
+  }
+}
+.footer-container {
   text-align: center;
-  padding-bottom: 5rem; }
+  padding-bottom: 5rem;
+}
 
-.linkedInLogoFill {
-  fill: #58b882; }
+.linkedin-logo-fill {
+  fill: #58b882;
+}
 
-.linkedInLogoWhitespace {
-  fill: #f1f1f1; }
+.linkedin-logo-whitespace {
+  fill: #f1f1f1;
+}
 
-.githubLogo {
+.github-logo {
   display: inline-block;
   width: 1.4rem;
   margin-left: 1rem;
   vertical-align: bottom;
-  opacity: 0.75; }
+  opacity: 0.75;
+}
 
-.linkedInLogo {
+.linkedin-logo {
   display: inline-block;
   width: 1.4rem;
   margin-left: 1rem;
   vertical-align: bottom;
-  opacity: 0.75; }
+  opacity: 0.75;
+}
 
-.githubSVG {
-  fill: #58b882; }
+body.dark .linkedin-logo-whitespace {
+  fill: #232021;
+}
+
+.github-svg {
+  fill: #58b882;
+}
+
+.toggle-button-knobs,
+.toggle-button-layer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.toggle-button {
+  position: relative;
+  width: 90px;
+  height: 36px;
+  overflow: hidden;
+  border-radius: 0.3rem;
+}
+
+.toggle-button-checkbox {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 3;
+}
+
+.toggle-button-knobs {
+  z-index: 2;
+}
+
+.toggle-button-layer {
+  width: 100%;
+  background-color: #ebe4e6;
+  transition: 0.3s ease all;
+  z-index: 1;
+}
+
+.toggle-button-knobs:before,
+.toggle-button-knobs:after,
+.toggle-button-knobs span {
+  position: absolute;
+  top: 4px;
+  width: 28px;
+  height: 10px;
+  font-size: 10px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 1;
+  padding: 9px 4px;
+  border-radius: 0.3rem;
+  transition: 0.3s ease all;
+}
+
+.toggle-button-knobs:before,
+.toggle-button-knobs:after {
+  color: #4e4b4c;
+  z-index: 1;
+}
+
+.toggle-button-knobs:before {
+  content: "LIGHT";
+  left: 4px;
+}
+
+.toggle-button-knobs:after {
+  content: "DARK";
+  right: 4px;
+}
+
+.toggle-button-knobs span {
+  width: 34px;
+  left: 44px;
+  background-color: #8a6fec;
+  z-index: 2;
+}
+
+.toggle-button-checkbox:checked + .toggle-button-knobs span {
+  left: 4px;
+  background-color: #8a6fec;
+}
+
+.toggle-button-checkbox:checked ~ .toggle-button-layer {
+  background-color: #4e4b4c;
+}
+
+.toggle-button-checkbox:checked + .toggle-button-knobs:before,
+.toggle-button-checkbox:checked + .toggle-button-knobs:after {
+  color: #f1f1f1;
+}
 
 /*# sourceMappingURL=app.css.map */

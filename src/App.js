@@ -8,17 +8,17 @@ import Work from './components/Work.js';
 import Contact from './components/Contact.js';
 
 function App() {
-	return (
-		<div>
-			<Navigation />
-			<Intro />
-			<About />
-			<Projects />
-			<Work />
-			<Contact />
-			<Footer />
-		</div>
-	);
+    return (
+        <div>
+            <Navigation />
+            <Intro />
+            <About />
+            <Work />
+            <Projects />
+            <Contact />
+            <Footer />
+        </div>
+    );
 }
 
 export default App;

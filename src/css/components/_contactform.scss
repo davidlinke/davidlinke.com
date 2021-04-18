@@ -1,39 +1,39 @@
-.contactInput {
-	box-sizing: border-box;
-	border: none;
-	width: 70%;
-	margin: 1rem auto;
-	padding: 0.5rem;
-	display: block;
+.contact-input {
+    box-sizing: border-box;
+    border: none;
+    width: 70%;
+    margin: 1rem auto;
+    padding: 0.5rem;
+    display: block;
 }
 .contactForm {
-	margin-top: 2rem;
+    margin-top: 2rem;
 }
 .contactForm,
-.contactText {
-	text-align: center;
+.contact-text {
+    text-align: center;
 }
 
 textarea {
-	height: 8rem;
+    height: 8rem;
 }
 
-.formErrorMessage {
-	color: $alt-color-three;
-	margin-top: -0.7rem;
-	padding-top: 0;
+.form-error-message {
+    color: $alt-color-three;
+    margin-top: -0.7rem;
+    padding-top: 0;
 }
 
-.formFailToSendMessage {
-	margin-top: 0;
+.form-fail-to-send-message {
+    margin-top: 0;
 }
 
-.formSuccessMessage {
-	color: $primary-color;
+.form-success-message {
+    color: $primary-color;
 }
 
 @media only screen and (max-width: 600px) {
-	.contactInput {
-		width: 100%;
-	}
+    .contact-input {
+        width: 100%;
+    }
 }

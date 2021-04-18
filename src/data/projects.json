@@ -1,40 +1,34 @@
 [
-	{
-		"name": "PodDialogue",
-		"description": "Read and contribute podcast transcripts. Includes the ability to add a new podcast, automatically pulling its information and episode data from its RSS feed. User can pull new episodes and add episode transcripts for viewing.",
-		"video": "/video/poddialogue.mp4",
-		"tech": ["React", "Rails", "GraphQL", "Apollo", "PostgreSQL"],
-		"url": "https://poddialogue.netlify.app",
-		"github": "https://github.com/davidlinke/podcasttranscripts_frontend"
-	},
-	{
-		"name": "Squadformer",
-		"description": "Easily generates random groups of people for classrooms or teams. Remembers past groupings so groups are not repeated and also lets you know when you have exhausted possible random combinations. Allows for manual rearranging and creation of groups, adding, removing, and marking people as absent to not include them in group generation, flexible group sizes with suggestions for evenly distributed groups, and a history of generated groups with links you can share so people know their group assignments.",
-		"video": "/video/squadformer.mp4",
-		"tech": [
-			"HTML & CSS",
-			"Express",
-			"EJS",
-			"Javascript & jQuery",
-			"CSS Animations"
-		],
-		"url": "http://squadformer.herokuapp.com",
-		"github": "https://github.com/davidlinke/squadformer"
-	},
-	{
-		"name": "Grab your umbrella?",
-		"description": "A responsively designed utilitarian website that quickly lets you know if you should grab your umbrella on your way out that day. Utilizes 4 API's to seamlessly get a users location via their IP address and show the upcoming precipitation forecast. This was my first attempt at SVG animations and I learned a lot in the process of building them to work and look how I envisioned.",
-		"video": "/video/umbrella.mp4",
-		"tech": ["HTML & CSS", "JavaScript & jQuery", "SVG Animations", "AJAX"],
-		"url": "https://davidlinke.github.io",
-		"github": "https://github.com/davidlinke/davidlinke.github.io"
-	},
-	{
-		"name": "The Knowledge",
-		"description": "Create and take fun quizzes! Featuring interactive quizzes of variable length where users can be entertained or tested. Includes account creation and login to manage quizzes, a flexible and dynamic create quiz form, and a \"global\" quiz play count. This was a group project where I was responsible for the frontend but also contributed to the sessions/authorization functionality on the backend.",
-		"video": "/video/theknowledge.mp4",
-		"tech": ["MongoDB", "Express", "React", "Node.js"],
-		"url": "http://theknowledge.surge.sh",
-		"github": "https://github.com/davidlinke/theknowledge-frontend"
-	}
+    {
+        "name": "PodDialogue",
+        "description": "Read and contribute podcast transcripts. Includes the ability to add a new podcast, automatically pulling its information and episode data from its RSS feed. User can pull new episodes and add episode transcripts for viewing.",
+        "video": "/video/poddialogue.mp4",
+        "tech": ["React", "Rails", "GraphQL", "Apollo", "PostgreSQL"],
+        "url": "https://poddialogue.netlify.app",
+        "github": "https://github.com/davidlinke/podcasttranscripts_frontend"
+    },
+    {
+        "name": "Squadformer",
+        "description": "Easily generates random groups of people for classrooms or teams. Remembers past groupings so groups are not repeated and also lets you know when you have exhausted possible random combinations. Allows for manual rearranging and creation of groups, adding, removing, and marking people as absent to not include them in group generation, flexible group sizes with suggestions for evenly distributed groups, and a history of generated groups with links you can share so people know their group assignments.",
+        "video": "/video/squadformer.mp4",
+        "tech": ["HTML & CSS", "Express", "EJS", "Javascript & jQuery", "CSS Animations"],
+        "url": "http://squadformer.herokuapp.com",
+        "github": "https://github.com/davidlinke/squadformer"
+    },
+    {
+        "name": "Grab your umbrella?",
+        "description": "A responsively designed utilitarian website that quickly lets you know if you should grab your umbrella on your way out that day. Utilizes 4 API's to seamlessly get a users location via their IP address and show the upcoming precipitation forecast. This was my first attempt at SVG animations and I learned a lot in the process of building them to work and look how I envisioned.",
+        "video": "/video/umbrella.mp4",
+        "tech": ["HTML & CSS", "JavaScript & jQuery", "SVG Animations", "AJAX"],
+        "url": "https://davidlinke.github.io",
+        "github": "https://github.com/davidlinke/davidlinke.github.io"
+    },
+    {
+        "name": "The Knowledge",
+        "description": "Create and take fun quizzes! Featuring interactive quizzes of variable length where users can be entertained or tested. Includes account creation and login to manage quizzes, a flexible and dynamic create quiz form, and a \"global\" quiz play count. This was a group project where I was responsible for the frontend but also contributed to the sessions/authorization functionality on the backend.",
+        "video": "/video/theknowledge.mp4",
+        "tech": ["MongoDB", "Express", "React", "Node.js"],
+        "url": "http://theknowledge.surge.sh",
+        "github": "https://github.com/davidlinke/theknowledge-frontend"
+    }
 ]

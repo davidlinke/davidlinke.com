@@ -4,103 +4,109 @@ $videoBoxShadow: 1px 1px 25px 0px rgba(50, 50, 50, 0.5);
 $videoMargin: 30px;
 
 .browser {
-	width: 300px;
-	height: 25px;
+    width: 300px;
+    height: 25px;
 }
 
-.browserSVG {
-	border-radius: $videoBorderRadius $videoBorderRadius 0 0;
-	box-shadow: $videoBoxShadow;
+.browse-svg {
+    border-radius: $videoBorderRadius $videoBorderRadius 0 0;
+    box-shadow: $videoBoxShadow;
 }
 
-.browserBar {
-	fill: $black;
+.browser-bar {
+    fill: $black;
 }
 
-.leftCircle {
-	fill: $alt-color-three;
+.left-circle {
+    fill: $alt-color-three;
 }
 
-.middleCircle {
-	fill: #ecd96f;
+.middle-circle {
+    fill: #ecd96f;
 }
 
-.rightCircle {
-	fill: $alt-color;
+.right-circle {
+    fill: $alt-color;
 }
 
-.addressBar {
-	fill: $white;
+.address-bar {
+    fill: $white;
 }
 
-// @media (prefers-color-scheme: dark) {
-// 	.browserBar {
-// 		fill: $grey;
-// 	}
-// }
-
-.projectVideo {
-	width: 300px;
-	// border-radius: 0 0 $videoBorderRadius $videoBorderRadius;
-	// -webkit-border-radius: 0 0 $videoBorderRadius $videoBorderRadius;
-	box-shadow: $videoBoxShadow;
+.project-video {
+    width: 300px;
+    box-shadow: $videoBoxShadow;
 }
 
-.videoContainer {
-	width: 300px;
+.video-container {
+    width: 300px;
 }
 
-.individualProject {
-	display: flex;
-	padding: 20px 0;
+.individual-project {
+    display: flex;
+    padding: 20px 0;
 }
 
-.individualProject:last-child {
-	padding-bottom: 0;
+.individual-project:last-child {
+    padding-bottom: 0;
 }
 
-.rightVideo {
-	margin: 0 0 $videoMargin $videoMargin;
+.right-video {
+    margin: 0 0 $videoMargin $videoMargin;
 }
 
-.leftVideo {
-	margin: 0 $videoMargin $videoMargin 0;
+.left-video {
+    margin: 0 $videoMargin $videoMargin 0;
 }
 
-.rightProject {
-	flex-direction: row-reverse;
+.right-project {
+    flex-direction: row-reverse;
 }
 
 @media only screen and (max-width: 600px) {
-	.videoContainer {
-		margin: 0 auto $videoMargin auto;
-	}
-	.individualProject {
-		display: block;
-		padding: 40px 0;
-	}
+    .video-container {
+        margin: 0 auto $videoMargin auto;
+    }
+    .individual-project {
+        display: block;
+        padding: 40px 0;
+    }
 }
 
-.githubLogo {
-	display: inline-block;
-	width: 1.4rem;
-	margin-left: 1rem;
-	vertical-align: bottom;
-	opacity: 0.75;
+.github-logo {
+    display: inline-block;
+    width: 1.4rem;
+    margin-left: 1rem;
+    vertical-align: bottom;
+    opacity: 0.75;
 }
 
-.projectTitle {
-	display: inline;
+.project-title {
+    display: inline;
 }
 
-.projectTitleContainer {
-	margin-bottom: 1.5rem;
+.project-title-container {
+    margin-bottom: 1.5rem;
 }
 
-.projectDescription {
-	margin-bottom: 1.5rem;
+.project-description {
+    margin-bottom: 1.5rem;
 }
 
-.techUsed {
-	justify-content: flex-start;
+.tech-used {
+    justify-content: flex-start;
+}
+
+body.dark {
+    .browse-svg {
+        box-shadow: none;
+    }
+
+    .project-video {
+        box-shadow: none;
+    }
+
+    .browser-bar {
+        fill: $white;
+    }
 }

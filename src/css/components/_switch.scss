@@ -1,0 +1,91 @@
+.toggle-button-knobs,
+.toggle-button-layer {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.toggle-button {
+    position: relative;
+    width: 90px;
+    height: 36px;
+    overflow: hidden;
+    border-radius: 0.3rem;
+}
+
+.toggle-button-checkbox {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 3;
+}
+
+.toggle-button-knobs {
+    z-index: 2;
+}
+
+.toggle-button-layer {
+    width: 100%;
+    background-color: $lightgrey;
+    transition: 0.3s ease all;
+    z-index: 1;
+}
+
+.toggle-button-knobs:before,
+.toggle-button-knobs:after,
+.toggle-button-knobs span {
+    position: absolute;
+    top: 4px;
+    width: 28px;
+    height: 10px;
+    font-size: 10px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 1;
+    padding: 9px 4px;
+    border-radius: 0.3rem;
+    transition: 0.3s ease all;
+}
+
+.toggle-button-knobs:before,
+.toggle-button-knobs:after {
+    color: $grey;
+    z-index: 1;
+}
+
+.toggle-button-knobs:before {
+    content: 'LIGHT';
+    left: 4px;
+}
+
+.toggle-button-knobs:after {
+    content: 'DARK';
+    right: 4px;
+}
+
+.toggle-button-knobs span {
+    width: 34px;
+    left: 44px;
+    background-color: $alt-color-two;
+    z-index: 2;
+}
+
+.toggle-button-checkbox:checked + .toggle-button-knobs span {
+    left: 4px;
+    background-color: $alt-color-two;
+}
+
+.toggle-button-checkbox:checked ~ .toggle-button-layer {
+    background-color: $grey;
+}
+
+.toggle-button-checkbox:checked + .toggle-button-knobs:before,
+.toggle-button-checkbox:checked + .toggle-button-knobs:after {
+    color: $white;
+}

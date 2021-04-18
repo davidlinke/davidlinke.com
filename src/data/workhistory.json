@@ -1,22 +1,37 @@
 [
-	{
-		"title": "Software Engineering Immersive Graduate",
-		"company": "General Assembly",
-		"description": "Graduated from full stack web development program with a focus on JavaScript, React, Express, Rails, MongoDB, and PostgreSQL."
-	},
-	{
-		"title": "Co-Founder / Product Manager",
-		"company": "Zolab",
-		"description": "Developed cleanroom products and business from the ground up working with a new factory in the Philippines. Led creation of B2B eCommerce website, products for US market, packaging design, and marketing."
-	},
-	{
-		"title": "Product Manager",
-		"company": "Applico",
-		"description": "Led teams of 3 to 7 people to create 15 custom iOS/Android apps and websites. This was a hybrid role where I was responsible for account management and project management in addition to product management."
-	},
-	{
-		"title": "BS in Electrical & Computer Engineering",
-		"company": "Worcester Polytechnic Institute",
-		"description": "Graduated with high distinction. Minored in Society, Technology & Policy."
-	}
+    {
+        "title": "Software Engineer",
+        "company": "ChalkTalkSPORTS",
+        "description": "Leading development of highly customized Salesforce Commerce Cloud (SFCC) based sites, including building out our virtual race platform on GoneForARun."
+    },
+    {
+        "title": "Software Engineer (Freelance)",
+        "company": "Reef Buddy",
+        "description": "Developed new features in React Native frontend and Node.js backend for a connected saltwater aquarium management device."
+    },
+    {
+        "title": "Software Engineering Immersive Graduate",
+        "company": "General Assembly",
+        "description": "Graduated from full stack web development program with a focus on JavaScript, React, Express, Rails, MongoDB, and PostgreSQL."
+    },
+    {
+        "title": "eCommerce Consultant",
+        "company": "Fancy",
+        "description": "Made recommendations to improve sales and usability as well as created a QA guide to improve testing procedures."
+    },
+    {
+        "title": "Co-Founder / Product Manager",
+        "company": "Zolab",
+        "description": "Developed cleanroom products and business from the ground up working with a new factory in the Philippines. Led creation of B2B eCommerce website, products for US market, packaging design, and marketing."
+    },
+    {
+        "title": "Product Manager",
+        "company": "Applico",
+        "description": "Led teams of 3 to 7 people to create 15 custom iOS/Android apps and websites. This was a hybrid role where I was responsible for account management and project management in addition to product management."
+    },
+    {
+        "title": "BS in Electrical & Computer Engineering",
+        "company": "Worcester Polytechnic Institute",
+        "description": "Graduated with high distinction. Minored in Society, Technology & Policy."
+    }
 ]

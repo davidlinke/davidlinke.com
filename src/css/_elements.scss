@@ -1,165 +1,172 @@
-* {
-	color: $black;
-	font-family: $primary-font;
+body {
+    background-color: $white;
+    color: $black;
+    font-family: $primary-font;
 }
 
-body {
-	background-color: $white;
+body.dark {
+    background-color: $black;
+    color: $white;
 }
 
 a,
 .link {
-	text-decoration: none;
-	color: $primary-color;
+    text-decoration: none;
+    color: $primary-color;
 }
 
 a:hover,
 .link:hover,
-a:hover .githubLogo .githubSVG,
-a:hover .linkedInLogo .linkedInLogoFill,
-.noOutline:hover {
-	color: darken($primary-color, 10%);
-	fill: darken($primary-color, 10%);
+a:hover .github-logo .github-svg,
+a:hover .linkedin-logo .linkedin-logo-fill,
+.no-outline:hover {
+    color: darken($primary-color, 10%);
+    fill: darken($primary-color, 10%);
 }
 
 button,
 input[type='submit'] {
-	background-color: $primary-color;
-	box-shadow: none !important;
-	border: 1px solid $primary-color;
-	border-radius: 0.3rem;
-	padding: 0.4rem 0.8rem;
-	margin: 0 0.5rem;
-	font-family: $primary-font;
-	font-weight: 400;
-	text-transform: capitalize;
-	font-size: 0.8rem;
-	cursor: pointer;
-	color: $white;
+    background-color: $primary-color;
+    box-shadow: none !important;
+    border: 1px solid $primary-color;
+    border-radius: 0.3rem;
+    padding: 0.4rem 0.8rem;
+    margin: 0 0.5rem;
+    font-family: $primary-font;
+    font-weight: 400;
+    text-transform: capitalize;
+    font-size: 0.8rem;
+    cursor: pointer;
+    color: $white;
 }
 
-.buttonForm {
-	display: inline;
+body.dark {
+    button,
+    input[type='submit'] {
+        color: $black;
+    }
+
+    input:not([type='submit']),
+    textarea {
+        background-color: $grey;
+    }
 }
 
-.noOutline {
-	border: none;
-	background-color: transparent;
-	color: $primary-color;
+.button-form {
+    display: inline;
+}
+
+.no-outline,
+body.dark .no-outline {
+    border: none;
+    background-color: transparent;
+    color: $primary-color;
 }
 
 button:hover,
 input[type='submit']:hover {
-	background-color: darken($primary-color, 10%);
+    background-color: darken($primary-color, 10%);
 }
 
-.noOutline:hover {
-	background-color: transparent;
+.no-outline:hover {
+    background-color: transparent;
 }
 
-.outerContainer {
-	padding: 1rem;
+.outer-container {
+    padding: 1rem;
 }
 
-.innerContainer {
-	max-width: 800px;
-	margin: 3rem auto 3rem auto;
+.inner-container {
+    max-width: 800px;
+    margin: 3rem auto 3rem auto;
 }
 
 h1 {
-	font-family: $style-font;
-	font-weight: 800;
-	font-size: 2rem;
-	margin-top: 3rem;
-	margin-bottom: 0.3rem;
+    font-family: $style-font;
+    font-weight: 800;
+    font-size: 2rem;
+    margin-top: 3rem;
+    margin-bottom: 0.3rem;
 }
 
 h2 {
-	font-family: $style-font;
-	font-weight: 800;
-	font-size: 1.3rem;
-	margin-top: 0;
-	margin-bottom: 2rem;
-	text-align: center;
+    font-family: $style-font;
+    font-weight: 800;
+    font-size: 1.3rem;
+    margin-top: 0;
+    margin-bottom: 2rem;
+    text-align: center;
 }
 
 h3 {
-	font-family: $style-font;
-	color: $alt-color-three;
-	font-weight: 800;
-	font-size: 0.9rem;
-	font-style: italic;
-	margin-bottom: 0.3rem;
+    font-family: $style-font;
+    color: $alt-color-three;
+    font-weight: 800;
+    font-size: 0.9rem;
+    font-style: italic;
+    margin-bottom: 0.3rem;
 }
 
 h4 {
-	font-family: $style-font;
-	font-weight: 200;
-	font-size: 1.6rem;
-	margin: 0;
+    font-family: $style-font;
+    font-weight: 200;
+    font-size: 1.6rem;
+    margin: 0;
 }
 
 p,
 li,
-.contactInput {
-	color: $grey;
-	font-weight: 300;
-	font-size: 0.9rem;
+.contact-input {
+    color: $grey;
+    font-weight: 300;
+    font-size: 0.9rem;
+}
+
+body.dark {
+    p,
+    li,
+    .contact-input {
+        color: $white;
+    }
 }
 
 ul {
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-	display: flex;
-	justify-content: space-between;
-	flex-wrap: wrap;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 li {
-	margin: 0 20px 0.3rem 0;
+    margin: 0 20px 0.3rem 0;
 }
 
 li:first-child {
-	margin-left: 0;
+    margin-left: 0;
 }
 
 li:last-child {
-	margin-right: 0;
+    margin-right: 0;
 }
 
 .primary {
-	color: $primary-color;
+    color: $primary-color;
 }
 
 .alt {
-	color: $alt-color;
+    color: $alt-color;
 }
 
 .alt2 {
-	color: $alt-color-two;
+    color: $alt-color-two;
 }
 
 .alt3 {
-	color: $alt-color-three;
+    color: $alt-color-three;
 }
 
 .white {
-	color: $white;
+    color: $white;
 }
-
-// @media (prefers-color-scheme: dark) {
-// 	* {
-// 		color: $white;
-// 	}
-// 	body {
-// 		background-color: $black;
-// 	}
-// 	p,
-// 	li,
-// 	.contactInput {
-// 		color: $white;
-// 		font-weight: 300;
-// 		font-size: 0.9rem;
-// 	}
-// }
