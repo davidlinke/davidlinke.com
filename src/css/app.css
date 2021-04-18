@@ -363,11 +363,11 @@ body.dark .browser-bar {
   display: block;
 }
 
-.contactForm {
+.contact-form {
   margin-top: 2rem;
 }
 
-.contactForm,
+.contact-form,
 .contact-text {
   text-align: center;
 }
@@ -376,17 +376,13 @@ textarea {
   height: 8rem;
 }
 
-.form-error-message {
+.form-error-message,
+body.dark .form-error-message {
   color: #ec9c6f;
-  margin-top: -0.7rem;
-  padding-top: 0;
 }
 
-.form-fail-to-send-message {
-  margin-top: 0;
-}
-
-.form-success-message {
+.form-success-message,
+body.dark .form-success-message {
   color: #58b882;
 }
 

@@ -6,10 +6,12 @@
     padding: 0.5rem;
     display: block;
 }
-.contactForm {
+
+.contact-form {
     margin-top: 2rem;
 }
-.contactForm,
+
+.contact-form,
 .contact-text {
     text-align: center;
 }
@@ -18,17 +20,13 @@ textarea {
     height: 8rem;
 }
 
-.form-error-message {
+.form-error-message,
+body.dark .form-error-message {
     color: $alt-color-three;
-    margin-top: -0.7rem;
-    padding-top: 0;
 }
 
-.form-fail-to-send-message {
-    margin-top: 0;
-}
-
-.form-success-message {
+.form-success-message,
+body.dark .form-success-message {
     color: $primary-color;
 }
 

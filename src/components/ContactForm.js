@@ -24,9 +24,7 @@ function ContactForm() {
                 if (response.status === 200) {
                     setSubmitState('success');
                 } else {
-                    // console.log(
-                    // 	`Error: Status ${response.status}. ${response.statusText}`
-                    // );
+                    // console.log(`Error: Status ${response.status}. ${response.statusText}`);
                     setSubmitState('error');
                 }
             })
@@ -37,8 +35,8 @@ function ContactForm() {
     };
 
     return (
-        <form name='contactForm' className='contactForm' onSubmit={handleSubmit(onSubmit)}>
-            <input type='hidden' name='form-name' value='contactForm' />
+        <form name='contactForm' className='contact-form' data-netlify='true' onSubmit={handleSubmit(onSubmit)}>
+            <input type='hidden' name='contactForm' value='contactForm' />
             <input name='name' placeholder='Name' ref={register({ required: true })} className='contact-input' />
             {errors.name && <p className='form-error-message'>Please enter your name.</p>}
             <input
