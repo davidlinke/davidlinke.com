@@ -4,7 +4,7 @@ const Intro = () => {
     return (
         <div className='outer-container'>
             <div className='inner-container'>
-                <img className='headshot' alt='self portrait' src='/images/david.jpg' />
+                <img className='headshot' alt='Headshot of David' src='/images/david.jpg' width='150px' height='150px' />
                 <h1>
                     Hi, I'm <span className='alt3'>David Linke</span>,
                 </h1>
