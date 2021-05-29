@@ -167,6 +167,11 @@ li:last-child {
   color: #f1f1f1;
 }
 
+.badge {
+  display: block;
+  margin: 40px auto 0 auto;
+}
+
 .nav-container {
   display: flex;
   flex-flow: row nowrap;

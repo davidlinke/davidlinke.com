@@ -20,7 +20,7 @@ const About = () => {
                     Setting up a new business was equally challenging and rewarding. Once the business was up and running, I focused primarily on marketing and sales. I started to miss that creative
                     and collaborative element in my job and decided that getting back to my engineering roots was the path I wanted to follow. After learning on my own and attending an engineering
                     bootcamp, I freelanced for a few months working with React before getting a job at ChalkTalkSPORTS. I quickly learned the ins and outs of the Salesforce Commerce Cloud platform
-                    developing multiple eCommerce sites and have been working hard to build great user experiences + solid backend functionality ever since.
+                    leading development on multiple eCommerce sites based on both SiteGenesis and SFRA. I became a certified Salesforce B2C Commerce Developer in February 2021. After 1.5 years at ChalkTalkSports I moved to Red Van Workshop, where I continue to build great user experiences + solid backend functionality on the SFCC platform.
                 </p>
                 <p>
                     When I'm not coding you can find me designing/building wood furniture, perfecting my pizza making skills, automating my home (primarily with homebridge and home-assistant), helping
@@ -34,6 +34,7 @@ const About = () => {
                     <li>React</li>
                     <li>Node.js</li>
                 </ul>
+                <img className='badge' alt='Salesforce Certified B2C Commerce Developer Badge' src='/images/certified_b2c_developer.png' width='100px' height='100px' />
             </div>
         </div>
     );

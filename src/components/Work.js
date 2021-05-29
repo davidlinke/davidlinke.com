@@ -14,7 +14,7 @@ const Work = () => {
                                     <span className={`timeline-dot ${index === 0 && 'top-timeline-dot'}`}>•</span>
                                     <p className='work-title'>{pastJob.title}</p>
                                     <p className='work-company'>{pastJob.company}</p>
-                                    <p className='work-description'>{pastJob.description}</p>
+                                    <p className='work-description' dangerouslySetInnerHTML={{__html: pastJob.description}}/>
                                 </div>
                             );
                         })}

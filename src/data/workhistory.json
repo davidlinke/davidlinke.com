@@ -1,8 +1,13 @@
 [
     {
+        "title": "Senior Salesforce Commerce Cloud Developer",
+        "company": "Red Van Workshop",
+        "description": "Working with clients to develop and enhance their SFCC based sites."
+    },
+    {
         "title": "Software Engineer",
         "company": "ChalkTalkSPORTS",
-        "description": "Leading development of highly customized Salesforce Commerce Cloud (SFCC) based sites, including building out our virtual race platform on GoneForARun."
+        "description": "Lead development of highly customized Salesforce Commerce Cloud (SFCC) based sites, including building out the virtual race platform on <a href='https://www.goneforarun.com' target='_blank' rel='noreferrer'>GoneForARun</a> and a new PDP + page designer on <a href='https://www.chalktalksports.com' target='_blank' rel='noreferrer'>ChalkTalkSPORTS</a>."
     },
     {
         "title": "Software Engineer (Freelance)",
